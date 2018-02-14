@@ -43,13 +43,13 @@ private BikeService bikes;
 	    	Validate.notNull(model);
 	    	List<Bike> bikes = this.bikes.getAllBikes();
 			
-			model.addAttribute("bikes", bikes);
+			//	model.addAttribute("users", bikes);
 			
 			//List<Product> products = this.products.getProducts();
 			
 			//model.addAttribute("products", products);
 			
-			return "landing";
+			return "bikeManagement";
 		}
 
 }

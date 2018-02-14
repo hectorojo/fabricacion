@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html ng-app>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
+<!DOCTYPE html ng-app="myApp">
+<html ng-controller="UsersController">
+<!-- header code -->
 <body>
-
-
-		<label>Name :</label><input type="text" ng-model="name" placeholder="Enter your name"/>
-		<h1>Hello <span ng-bind="name"></span></h1>
-			
-		<h1>Hey {{name}}</h1>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js">
-		</script>
-
+ 
+<div ng-repeat="user in bikes">{{bike.model}} {{bike.manufacturer}}</div>
+ 
+<script type="text/javascript" src="webjars/jquery/2.1.1/jquery.js"></script>
+<script type="text/javascript" src="webjars/angularjs/1.3.8/angular.min.js"></script>
+<script type="text/javascript" src="webjars/angularjs/1.3.8/angular-resource.min.js"></script>
 </body>
 </html>

@@ -18,7 +18,7 @@ public class MaquinasController {
     	Validate.notNull(model);
 
 		
-		return "maquinas";
+		return "angular";
 	}
 	
 }
