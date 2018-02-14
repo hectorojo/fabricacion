@@ -2,7 +2,8 @@
 
 angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $q){
 
-    var REST_SERVICE_URI = 'http://localhost:8080/fabricacion/bike/';
+    //var REST_SERVICE_URI = 'http://localhost:8080/fabricacion/bike/';
+	var REST_SERVICE_URI = 'http://fabricacion.herokuapp.com/bike/';
 
     var factory = {
         fetchAllUsers: fetchAllUsers,
